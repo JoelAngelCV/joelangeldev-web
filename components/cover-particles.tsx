@@ -61,10 +61,10 @@ const CoverParticles = () => {
                         },
                         links: {
                             color: "#ffffff",
-                            distance: 150,
+                            distance: 100,
                             enable: true,
-                            opacity: 0.5,
-                            width: 1,
+                            opacity: 1,
+                            width: 0.5,
                         },
                         move: {
                             direction: "none",
@@ -80,10 +80,10 @@ const CoverParticles = () => {
                             density: {
                                 enable: true,
                             },
-                            value: 80,
+                            value: 120,
                         },
                         opacity: {
-                            value: 0.5,
+                            value: 0.6,
                         },
                         shape: {
                             type: "circle",

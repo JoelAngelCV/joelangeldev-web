@@ -5,13 +5,17 @@
 html,
 body {
   color: #fff;
-  background: #1f1934;
+  background: #0E0B13;
 }
 
 main {
-  background: #393a47;
+  background: #0e0e13;
   height: 100vh;
   height: 100dvh;
+}
+
+input, textarea {
+  @apply text-black;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,

@@ -10,12 +10,12 @@ const config: Config = {
     extend: {
       colors: {
         secondary: "#f5741c",
-        darkBg: "#131424",
+        darkBg: "#05050a",
       },
       
       backgroundImage: {
         "gradient-cover":
-          "linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%)",
+          "linear-gradient(90.21deg, rgba(53, 29, 43, 0.5) -5.91%, rgba(21, 16, 45, 0.5) 111.58%)",
       },
     },
   },
