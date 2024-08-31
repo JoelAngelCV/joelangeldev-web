@@ -10,7 +10,7 @@ const Introduction = () => {
         <Image className="pt-6 w-64 md:w-96 mx-auto" src="/home-4.png" priority width="800" height="800" alt="Profile pic"/>
 
         <div className="flex flex-col justify-center max-w-md">
-          <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">
+          <h1 className="mb-5 text-2xl leading-tight text-center md:text-4xl md:mb-10">
             Si se puede crear en la mente,
             <TypeAnimation
               sequence={[
@@ -30,11 +30,11 @@ const Introduction = () => {
             />
           </h1>
 
-          <p className="mx-auto mb-2 text-md md:text-lg md:mx-0 md:mb-8">
+          <p className="mx-auto text-center mb-2 text-md md:text-lg md:mx-0 md:mb-8">
             Como desarrollador web me dedico a combinar diseño y funcionalidad para crear experiencias digitales impactantes y accesibles.
           </p>
 
-          <div className="mt-4 flex items-center justify-center gap-3 md:justify-start md:gap-10">
+          <div className="mt-4 flex items-center justify-center gap-3 md:gap-10">
             <Link
             href="/portafolio"
             className='px-3 py-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50'
