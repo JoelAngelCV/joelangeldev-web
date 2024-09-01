@@ -22,7 +22,7 @@ const ServicesPage = () => {
           en la creación de sitios web y aplicaciones atractivas y funcionales. Utilizando las últimas tecnologías, 
           como HTML, CSS y JavaScript, React, Next JS, diseño interfaces de usuario intuitivas y responsivas que reflejan la 
           identidad de marca y mejoran su presencia en línea.</p>
-          <Link href="/contact" className="px-3 py-2 text-lg rounded-lg bg-secondary/90 hover:bg-secondary font-bold">
+          <Link href="/contacto" className="px-3 py-2 text-lg rounded-lg bg-secondary/90 hover:bg-secondary font-bold">
             Contacta conmigo
           </Link>   
         </div>
