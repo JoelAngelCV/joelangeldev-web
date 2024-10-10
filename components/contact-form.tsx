@@ -89,7 +89,7 @@ const ContactForm = () => {
           required>
         </textarea>
 
-        <button className="w-1/2 mx-auto bg-secondary text-white md:text-lg p-2 rounded-md hover:bg-green-500 hover:font-bold">
+        <button className="w-1/2 mx-auto mt-2 bg-secondary text-white md:text-lg p-2 rounded-md hover:bg-green-500 hover:font-bold">
         Enviar
         </button>
       </form>

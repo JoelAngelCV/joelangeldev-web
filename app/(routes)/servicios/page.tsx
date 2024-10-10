@@ -3,6 +3,11 @@ import CircleImage from "@/components/circle-image";
 import SliderServices from "@/components/slider-services";
 import TransitionPage from "@/components/transition-page";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:"Servicios"
+}
 
 const ServicesPage = () => {
   return (
@@ -20,8 +25,7 @@ const ServicesPage = () => {
           </h1>
           <p className="my-3 mb-8 md:mb-4 text-lg text-gray-300">Ofrezco mis servicios de desarrollo web frontend especializados 
           en la creación de sitios web y aplicaciones atractivas y funcionales. Utilizando las últimas tecnologías, 
-          como HTML, CSS y JavaScript, React, Next JS, diseño interfaces de usuario intuitivas y responsivas que reflejan la 
-          identidad de marca y mejoran su presencia en línea.</p>
+          como HTML, CSS y JavaScript, React, Next JS, diseño interfaces de usuario intuitivas y responsivas.</p>
           <Link href="/contacto" className="px-3 py-2 text-lg rounded-lg bg-secondary/90 hover:bg-secondary font-bold">
             Contacta conmigo
           </Link>   

@@ -34,15 +34,15 @@ export const itemsNavbar = [
     },
     {
         id: 3,
-        title: "Book",
-        icon: <BookText size={25} color="#fff" strokeWidth={1} />,
-        link: "/servicios",
-    },
-    {
-        id: 4,
         title: "Target",
         icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
         link: "/portafolio",
+    },
+    {
+        id: 4,
+        title: "Book",
+        icon: <BookText size={25} color="#fff" strokeWidth={1} />,
+        link: "/servicios",
     },
     {
         id: 5,
@@ -51,6 +51,75 @@ export const itemsNavbar = [
         link: "/contacto",
     },
 ];
+
+export const skillsData = [
+    {
+        id: 1,
+        title: "HTML",
+        image: "/logo-html.png",
+        alt: "Logo HTML",
+    },
+    {
+        id: 2,
+        title: "CSS",
+        image: "/logo-css.png",
+        alt: "Certificado CSS Joelangeldev",
+    },
+    {
+        id: 3,
+        title: "Javascript",
+        image: "/logo-js.png",
+        alt: "Logo Javascript",
+    },
+    {
+        id: 4,
+        title: "React",
+        image: "/logo-react.png",
+        alt: "Logo React"
+    },
+    {
+        id: 5,
+        title: "Node JS",
+        image: "/logo-node.png",
+        alt: "Logo NodeJS"
+    },
+    {
+        id: 6,
+        title: "Typescript",
+        image: "/logo-ts.png",
+        alt: "Logo Typescript"
+    },
+    {
+        id: 7,
+        title: "Next JS",
+        image: "/logo-next.png",
+        alt: "Logo NextJS"
+    },
+    {
+        id: 8,
+        title: "Tailwind",
+        image: "/logo-tw.png",
+        alt: "Logo Tailwind"
+    },
+    {
+        id: 9,
+        title: "Git",
+        image: "/logo-git.png",
+        alt: "Logo Git"
+    },
+    {
+        id: 10,
+        title: "SQL",
+        image: "/logo-sql.png",
+        alt: "Logo SQL"
+    },
+    {
+        id: 11,
+        title: "PHP",
+        image: "/logo-php.png",
+        alt: "Logo PHP"
+    },
+]
 
 export const dataStudies = [
     {
@@ -111,14 +180,14 @@ export const certificateData = [
         alt: "Certificado PHP Joelangeldev"
     },
     {
-        id: 7,
-        title: "Angular",
+        id: 8,
+        title: "Angular+NestJS",
         image: "/certificado-angular.png",
         alt: "Certificado Angular Joelangeldev"
     },
     {
-        id: 8,
-        title: "React",
+        id: 7,
+        title: "React+Redux",
         image: "/certificado-react.png",
         alt: "Certificado React Joelangeldev"
     },
@@ -143,12 +212,12 @@ export const serviceData = [
         title: "Desarrollo web",
         description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
     },
-    {
-        id: 4,
-        icon: <Book />,
-        title: "Copywriting",
-        description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
-    },
+    // {
+    //     id: 4,
+    //     icon: <Book />,
+    //     title: "Copywriting",
+    //     description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
+    // },
     {
         id: 5,
         icon: <Rocket />,

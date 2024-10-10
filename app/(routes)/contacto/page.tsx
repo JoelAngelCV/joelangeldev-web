@@ -1,8 +1,11 @@
-
 import CircleImage from "@/components/circle-image"
 import TransitionPage from "@/components/transition-page"
 import ContactForm from "@/components/contact-form"
+import type { Metadata } from "next"
 
+export const metadata: Metadata = {
+  title:"Contacto"
+}
 
 const Contact = () => {
   
@@ -16,9 +19,6 @@ const Contact = () => {
                 <span className="font-bold text-secondary md:inline block">es importante</span>
               </h1>
               <ContactForm />
-              <h3 className="flex items-center justify-center m-4 pt-5 tracking-wide">
-                o escribe un correo a: joelangelcv@gmail.com
-              </h3>
           </div>
       </>
     )
