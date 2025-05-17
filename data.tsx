@@ -229,58 +229,27 @@ export const serviceData = [
 export const dataPortfolio = [
     {
         id: 1,
-        title: "Web Pro",
-        image: "/image-1.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "Good Coffee",
+        image: "/screen-goodcoff.jpg",
+        urlGithub: "https://github.com/JoelAngelCV/good-coffee-front.git",
+        urlDemo: "https://good-coff.vercel.app/",
+        description: "Proyecto de Ecommerce Full Stack donde por el lado del frontend se usa NextJS con Typescript y por el lado del backend Strapi CMS, otras tecnologías usadas son: ShadcnUI y TaliwindCSS en los estilos y PostgreSQL en la base de datos, Cloudinary para los archivos y también se incluye la pasarela de pagos con Stripe de prueba. Su despliegue a producción se hizo utilizando los servicios de Vercel , Render y Neondb ."
     },
     {
         id: 2,
-        title: "Desarrollo Web Ágil",
-        image: "/image-2.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "Modass For Men",
+        image: "/modassweb.jpg",
+        urlGithub: "https://github.com/JoelAngelCV/modass.git",
+        urlDemo: "https://modass.onrender.com",
+        description:"MVP de una tienda virtual hecha con HTML , CSS y Javascript donde también se utilizó Bootstrap CSS, es un proyecto donde se cuenta con un carrito de compras que simula la compra y productos que son manejados con peticiones en Javascript, se puede ver el código publicamente en Github ."
     },
     {
         id: 3,
-        title: "Estrategias Web",
-        image: "/image-3.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "Portafolio",
+        image: "/joeldev1.jpg",
+        urlGithub: "https://github.com/JoelAngelCV/joeldev.git",
+        urlDemo: "https://joeldev.onrender.com/",
+        description:"Portafolio web hecho con HTML , CSS y Javascript tambien se usa Bootstrap y los mensajes de la zona de contacto se almacenan en bases de datos MySQL haciendo la conexión entre la interfaz y la base de datos con lenguaje PHP ."
     },
-    {
-        id: 4,
-        title: "Ideas Creativas",
-        image: "/image-4.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 5,
-        title: "Webs Impactantes",
-        image: "/image-5.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 6,
-        title: "Web Dinámica",
-        image: "/image-6.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 7,
-        title: "Dark Web ",
-        image: "/image-7.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 8,
-        title: "E-commerce web",
-        image: "/image-8.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    }
+   
 ];
