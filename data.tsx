@@ -233,7 +233,7 @@ export const dataPortfolio = [
         image: "/screen-goodcoff.jpg",
         urlGithub: "https://github.com/JoelAngelCV/good-coffee-front.git",
         urlDemo: "https://good-coff.vercel.app/",
-        description: "Proyecto de Ecommerce Full Stack donde por el lado del frontend se usa NextJS con Typescript y por el lado del backend Strapi CMS, otras tecnologías usadas son: ShadcnUI y TaliwindCSS en los estilos y PostgreSQL en la base de datos, Cloudinary para los archivos y también se incluye la pasarela de pagos con Stripe de prueba. Su despliegue a producción se hizo utilizando los servicios de Vercel , Render y Neondb ."
+        description: "Proyecto de Ecommerce Full Stack con NextJS y Typescript en el frontend, Strapi CMS en el backend, consumo de su API y otras tecnologías como: TaliwindCSS y ShadcnUI en los estilos, PostgreSQL en la base de datos, Zustand en la gestión de estado, Cloudinary para los archivos y Stripe como pasarela de pagos. Su despliegue a producción se hizo utilizando los servicios de Vercel , Render y Neondb ."
     },
     {
         id: 2,
@@ -249,7 +249,7 @@ export const dataPortfolio = [
         image: "/joeldev1.jpg",
         urlGithub: "https://github.com/JoelAngelCV/joeldev.git",
         urlDemo: "https://joeldev.onrender.com/",
-        description:"Portafolio web hecho con HTML , CSS y Javascript tambien se usa Bootstrap y los mensajes de la zona de contacto se almacenan en bases de datos MySQL haciendo la conexión entre la interfaz y la base de datos con lenguaje PHP ."
+        description:"Portafolio web hecho con HTML , CSS , Javascript y Bootstrap y bases de datos MySQL conectada con PHP . También cuenta con optimización de rendimiento y técnicas de SEO"
     },
    
 ];
