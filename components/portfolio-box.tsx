@@ -15,7 +15,7 @@ interface PortfolioProps {
 const PortfolioBox = (props: PortfolioProps) => {
     const { data } = props
     const { title, image, urlGithub, urlDemo, description} = data
-    const palabrasClave = ["Ecommerce", "Full", "Stack", "NextJS", "Typescript", "Strapi", "ShadcnUI", "TaliwindCSS", "PostgreSQL", "Cloudinary", "Stripe", "Vercel", "Render", "Neondb", "HTML", "CSS", "Javascript", "Bootstrap", "MySQL", "PHP", "Github"];
+    const palabrasClave = ["Ecommerce", "Full", "Stack", "NextJS", "Typescript", "Strapi", "API", "ShadcnUI", "TaliwindCSS", "PostgreSQL", "Cloudinary", "Zustand", "Stripe", "Vercel", "Render", "SEO", "Neondb", "HTML", "CSS", "Javascript", "Bootstrap", "MySQL", "PHP", "Github"];
     const renderDescription = description.split(" ").map((palabra, index) => 
   palabrasClave.includes(palabra) ? <strong key={index}>{palabra} </strong> : palabra + " "
 );
