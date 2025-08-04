@@ -3,12 +3,13 @@ import TransitionPage from "@/components/transition-page"
 import ContactForm from "@/components/contact-form"
 import type { Metadata } from "next"
 
+
 export const metadata: Metadata = {
   title:"Contacto"
 }
 
 const Contact = () => {
-  
+
   return (
       <>
         <TransitionPage />
