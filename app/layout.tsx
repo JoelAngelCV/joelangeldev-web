@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: "Joel Angel Dev - Desarrollador Web",
     template: "%s - Joel Angel Dev"
   },
-  description: "Desarrollador web frontend con experiencia en el uso de lenguajes HTML, CSS, Javascript, Typesript, frameworks como React, Next JS, Angular; lenguajes de programación y tecnologías como Node Js, PHP, Mysql, Tailwind, Bootstrap, Git y otras herramientas de desarrollo web",
+  description: "Desarrollador web frontend con experiencia en HTML, CSS, Javascript, Typesript, frameworks como React, Next JS, Tailwind, y otras tecnologías como NodeJS, SQL, Git, Strapi, Zustand e integracion y uso de la inteligencia atificial en el desarrollo web",
   twitter: {
     card: "summary_large_image"
   }
