@@ -11,7 +11,7 @@ async function handleForm(formData: FormData){
     const user_email = formData.get('user_email');
     const subject = formData.get('subject');
     const content = formData.get('content');
-
+    
     if (!user_name || !user_email || !content){
       return console.log('Por favor rellena todos los campos')
     }
