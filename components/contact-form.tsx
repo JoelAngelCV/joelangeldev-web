@@ -1,29 +1,54 @@
 "use client"
 
 import handleForm from "@/app/action";
-import { useState, useEffect } from "react";
+import { FormEvent, useState } from "react";
+import axios from "axios"
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
 
 const ContactForm = () => {
-  const [numeroAleatorio, setNumeroAleatorio] = useState(0);
-  const [numeroUsuario, setNumeroUsuario] = useState("");
-  const [habilitarBoton, setHabilitarBoton] = useState(false);
+
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
+  const handleSubmit = async (e: FormEvent) => {
+    setSubmit('');
+
+    if (!executeRecaptcha) {
+      console.log("not available to execute recaptcha")
+      return;
+    }
+
+    const gRecaptchaToken = await executeRecaptcha('inquirySubmit');
+
+    ///
+
+    const response = await axios({
+      method: "post",
+      url: "/api/recaptchaSubmit",
+      data: {
+        gRecaptchaToken,
+      },
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (response?.data?.success === true) {
+      console.log(`Success with score: ${response?.data?.score}`);
+      setSubmit('ReCaptcha Verified and Form Submitted!')
+    } else {
+      console.log(`Failure with score: ${response?.data?.score}`);
+      setSubmit("Failed to verify recaptcha! You must be a robot!")
+    }
+
+  }
+
+
+  const [submit, setSubmit] = useState('')
   
-  useEffect(() => {
-    const generado = Math.floor(Math.random() * 9000) + 1000; // Ej: 4 dígitos
-    setNumeroAleatorio(generado);
-  }, []);
-
-  useEffect(() => {
-    // Validación simple para habilitar el botón
-    const todoLleno =
-      numeroUsuario.trim() === numeroAleatorio.toString();
-
-    setHabilitarBoton(todoLleno);
-  }, [numeroUsuario, numeroAleatorio]);
-
-  return (
-    <div className="flex items-center justify-center">
-      <form action={handleForm} method="POST" className="w-[80vw] md:w-[420px] flex flex-col gap-6">
+  return (    
+    <div className="flex items-center justify-center flex-col mt-10 mb-10">
+      <form className="w-[80vw] md:w-[420px] flex flex-col gap-6" onSubmit={handleSubmit} action={handleForm} >
         <input 
           type="text" 
           name="user_name" 
@@ -106,36 +131,15 @@ const ContactForm = () => {
           }}
           required>
         </textarea>
-        
-        <div className="flex items-center justify-center -my-0.5">  
-          <p className="text-center">Por favor ingresa este código:<strong>&nbsp;{numeroAleatorio}</strong></p>
-          <input
-            className="w-12 mx-2 rounded-xl text-center font-bold"
-            type="text"
-            minLength={4}
-            maxLength={4}
-            value={numeroUsuario}
-            onChange={(e) => setNumeroUsuario(e.target.value)}
-          />  
-        </div>
-        <p className="h-1 text-center mb-3">
-         {numeroUsuario.length == 4 && numeroUsuario !== numeroAleatorio.toString() && (
-          <span className="text-sm text-red-500">El número no coincide</span>
-          )} 
-        </p>
+     
         <button 
-        className="w-1/2 mx-auto mt-2 md:text-lg p-2 rounded-md transition-all duration-300 ease-in-out"
-        disabled={!habilitarBoton}
-        style={{
-          backgroundColor: habilitarBoton ? "green" : "gray",
-          color: "white",
-          cursor: habilitarBoton ? "pointer" : "not-allowed",
-        }}
+        className="w-1/2 mx-auto mt-2 md:text-lg p-2 rounded-md transition-all duration-300 ease-in-out bg-green-500 hover:bg-green-600"
         >
         Enviar
         </button>
       </form>
-    </div>
+      {submit && <p className="text-lg text-center">{submit}</p>}
+    </div>        
   )
 }
 

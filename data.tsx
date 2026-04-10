@@ -1,4 +1,4 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, X, Github, Crop, Pencil, Computer, Book, Rocket, Mail } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, X, Github, Crop, Pencil, Computer, Book, Rocket, Mail, AppWindow, Wrench } from "lucide-react";
 
 export const socialNetworks = [
     {
@@ -22,31 +22,31 @@ export const socialNetworks = [
 export const itemsNavbar = [
     {
         id: 1,
-        title: "Home",
+        title: "Inicio",
         icon: <HomeIcon size={25} color="#fff" strokeWidth={1} />,
         link: "/",
     },
     {
         id: 2,
-        title: "User",
+        title: "Sobre Mí",
         icon: <UserRound size={25} color="#fff" strokeWidth={1} />,
         link: "/sobre-mi",
     },
     {
         id: 3,
-        title: "Target",
+        title: "Portafolio",
         icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
         link: "/portafolio",
     },
     {
         id: 4,
-        title: "Book",
+        title: "Servicios",
         icon: <BookText size={25} color="#fff" strokeWidth={1} />,
         link: "/servicios",
     },
     {
         id: 5,
-        title: "Mail",
+        title: "Contacto",
         icon: <Mail size={25} color="#fff" strokeWidth={1} />,
         link: "/contacto",
     },
@@ -118,6 +118,12 @@ export const skillsData = [
         title: "PHP",
         image: "/logo-php.png",
         alt: "Logo PHP"
+    },
+    {
+        id: 12,
+        title: "Wordpress",
+        image: "/logo-wp.png",
+        alt: "Logo Wordpress"
     },
 ]
 
@@ -194,63 +200,77 @@ export const certificateData = [
 ]
 
 export const serviceData = [
-    
     {
         id: 1,
-        icon: <Pencil />,
-        title: "Diseño web",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
+        icon: <Computer />,
+        title: "Desarrollo web",
+        description: "Webs Responsivas y atractivas, adaptados a tus necesidades y objetivos comerciales.",
     },
     {
         id: 2,
-        icon: <Computer />,
-        title: "Desarrollo web",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
+        icon: <AppWindow />,
+        title: "Maquetación",
+        description: "Maquetación web desde diseños establecidos, utilizando las últimas tendencias y tecnologías.",
     },
-    // {
-    //     id: 4,
-    //     icon: <Book />,
-    //     title: "Copywriting",
-    //     description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
-    // },
     {
         id: 3,
-        icon: <Rocket />,
-        title: "SEO",
-        description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
+        icon: <Pencil />,
+        title: "Diseño web",
+        description: "Diseño creativo y profesional de interfaces web, centradas en la experiencia del usuario.",
     },
     {
         id: 4,
-        icon: <Crop />,
-        title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
+        icon: <Rocket />,
+        title: "SEO",
+        description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas.",
+    },
+    {
+        id: 5,
+        icon: <Wrench />,
+        title: "Mantenimiento",
+        description: "Mantenimiento de aplicaciones existentes, incluyendo diseño de logotipo, colores y elementos visuales.",
     },
 ];
 
 export const dataPortfolio = [
     {
-        id: 1,
+        title: "Chilca Ovni Festival",
+        description: "Página web de un evento musical con información general, galería de imágenes y venta de entradas.",
+        image: "/ovnisc.jpg",
+        tags: ["Next.js", "Tailwind", "Typescript", "PayPal"],
+        githubUrl: "https://github.com/JoelAngelCV/chilcaovni.git",
+        demoUrl: "https://chilcaovni.vercel.app/"
+    },
+    {
+        title: "Encuestas Presidenciales",
+        description: "Aplicación Full Stack donde un usuario puede registrarse e iniciar sesión, elegir a su candidato y ver resultados.",
+        image: "/eleccionsc.jpeg",
+        tags: ["Next.js", "Typescript", "Supabase"],
+        githubUrl: "https://github.com/JoelAngelCV/eleccionesperu.git",
+        demoUrl: "https://eleccionesperu.vercel.app/"
+    },
+    {
         title: "Good Coffee",
+        description: "Proyecto Ecommerce con fotos y detalles de cada producto a modo de tarjetas, una sección favoritos y carrito de compras.",
         image: "/screen-goodcoff.jpg",
-        urlGithub: "https://github.com/JoelAngelCV/good-coffee-front.git",
-        urlDemo: "https://good-coff.vercel.app/",
-        description: "Proyecto de Ecommerce Full Stack con NextJS y Typescript en el frontend, Strapi CMS en el backend, consumo de su API y otras tecnologías como: TaliwindCSS y ShadcnUI en los estilos, PostgreSQL en la base de datos, Zustand en la gestión de estado, Cloudinary para los archivos y Stripe como pasarela de pagos. Su despliegue a producción se hizo utilizando los servicios de Vercel , Render y Neondb ."
+        tags: ["Next.js", "Typescript", "Stripe", "Zustand"],
+        githubUrl: "https://github.com/JoelAngelCV/good-coffee-front.git",
+        demoUrl: "https://good-coff.vercel.app/"
     },
     {
-        id: 2,
         title: "Modass For Men",
+        description: "Maqueta de una tienda virtual, un proyecto donde se cuenta con un carrito de compras que simula la compra.",
         image: "/modassweb.jpg",
-        urlGithub: "https://github.com/JoelAngelCV/modass.git",
-        urlDemo: "https://modass.onrender.com",
-        description:"MVP de una tienda virtual hecha con HTML , CSS y Javascript donde también se utilizó Bootstrap CSS, es un proyecto donde se cuenta con un carrito de compras que simula la compra y productos que son manejados con peticiones en Javascript, se puede ver el código publicamente en Github ."
+        tags: ["HTML", "CSS", "Bootstrap", "Javascript"],
+        githubUrl: "https://github.com/JoelAngelCV/modass.git",
+        demoUrl: "https://modass.onrender.com"
     },
     {
-        id: 3,
         title: "Portafolio",
+        description: "Portafolio web conectado a bases de datos MySQL. También con optimización de rendimiento y técnicas de SEO.",
         image: "/joeldev1.jpg",
-        urlGithub: "https://github.com/JoelAngelCV/joeldev.git",
-        urlDemo: "https://joeldev.onrender.com/",
-        description:"Portafolio web hecho con HTML , CSS , Javascript y Bootstrap y bases de datos MySQL conectada con PHP . También cuenta con optimización de rendimiento y técnicas de SEO"
+        tags: ["HTML", "CSS", "PHP", "JAVASCRIPT"],
+        githubUrl: "https://github.com/JoelAngelCV/joeldev.git",
+        demoUrl: "https://joeldev.onrender.com/"
     },
-   
 ];

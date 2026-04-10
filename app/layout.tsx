@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 
+
 import "./globals.css";
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -30,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <GoogleTagManager gtmId="GTM-WC4DLL4M"/>
       <body className={urbanist.className}>
         <Navbar/>
