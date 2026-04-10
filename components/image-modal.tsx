@@ -15,7 +15,7 @@ function ImageModal({url, alt}: Props) {
     };
 
     return (
-        <div>
+        <div >
             <Image
                 width={120}
                 height={80}

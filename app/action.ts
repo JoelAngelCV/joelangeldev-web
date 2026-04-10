@@ -3,6 +3,7 @@
 import { sendEmail } from "./lib/brevo";
 import { redirect } from "next/navigation";
 
+
 async function handleForm(formData: FormData){
     const to_name = "Joel Angel Dev";
     const to_email = "joelangelcv@gmail.com";
@@ -25,11 +26,9 @@ async function handleForm(formData: FormData){
         user_name: user_name as string,
         user_email: user_email as string,
         htmlContent: content as string,
-
-    })
+      })
 
     redirect('/success')
 
   }
-
 export default handleForm

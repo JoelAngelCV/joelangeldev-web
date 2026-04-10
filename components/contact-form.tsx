@@ -1,15 +1,54 @@
 "use client"
 
 import handleForm from "@/app/action";
-
-
+import { FormEvent, useState } from "react";
+import axios from "axios"
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
 
 const ContactForm = () => {
+
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
+  const handleSubmit = async (e: FormEvent) => {
+    setSubmit('');
+
+    if (!executeRecaptcha) {
+      console.log("not available to execute recaptcha")
+      return;
+    }
+
+    const gRecaptchaToken = await executeRecaptcha('inquirySubmit');
+
+    ///
+
+    const response = await axios({
+      method: "post",
+      url: "/api/recaptchaSubmit",
+      data: {
+        gRecaptchaToken,
+      },
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (response?.data?.success === true) {
+      console.log(`Success with score: ${response?.data?.score}`);
+      setSubmit('ReCaptcha Verified and Form Submitted!')
+    } else {
+      console.log(`Failure with score: ${response?.data?.score}`);
+      setSubmit("Failed to verify recaptcha! You must be a robot!")
+    }
+
+  }
+
+
+  const [submit, setSubmit] = useState('')
   
-  return (
-    
-        <div className="flex items-center justify-center">
-      <form action={handleForm} method="POST" className="w-[80vw] md:w-[420px] flex flex-col gap-6">
+  return (    
+    <div className="flex items-center justify-center flex-col mt-10 mb-10">
+      <form className="w-[80vw] md:w-[420px] flex flex-col gap-6" onSubmit={handleSubmit} action={handleForm} >
         <input 
           type="text" 
           name="user_name" 
@@ -99,9 +138,8 @@ const ContactForm = () => {
         Enviar
         </button>
       </form>
-    </div>    
-        
-    
+      {submit && <p className="text-lg text-center">{submit}</p>}
+    </div>        
   )
 }
 
