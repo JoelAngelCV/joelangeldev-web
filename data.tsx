@@ -243,7 +243,7 @@ export const dataPortfolio = [
     },
     {
         title: "Encuestas Presidenciales",
-        description: "Aplicación Full Stack donde un usuario puede registrarse e iniciar sesión, elegir a su candidato y ver resultados.",
+        description: "Aplicación Full Stack donde un usuario puede registrarse e iniciar sesión, votar por su candidato y ver resultados.",
         image: "/eleccionsc.jpeg",
         tags: ["Next.js", "Typescript", "Supabase"],
         githubUrl: "https://github.com/JoelAngelCV/eleccionesperu.git",

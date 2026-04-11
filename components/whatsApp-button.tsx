@@ -5,7 +5,7 @@ const WhatsAppButton = () => {
   const phoneNumber = "51925610070"; // Sustituye por tu número con código de país (sin el +)
   const message = "Hola, vi tu portafolio y me gustaría contactarte.";
   
-  const whatsappUrl = `https://wa.me{phoneNumber}?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <div className="flex justify-center mb-24">
