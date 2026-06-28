@@ -234,6 +234,14 @@ export const serviceData = [
 
 export const dataPortfolio = [
     {
+        title: "Itek Perú",
+        description: "Página web para una empresa que brinda servicios de climatización y venta de equipos.",
+        image: "/itekperru.jpg",
+        tags: ["Next.js", "Tailwind", "Typescript", "Framer Motion"],
+        githubUrl: "https://github.com/JoelAngelCV/itekperu",
+        demoUrl: "https://itekperu.vercel.app/"
+    },
+    {
         title: "Chilca Ovni Festival",
         description: "Página web de un evento musical con información general, galería de imágenes y venta de entradas.",
         image: "/ovnisc.jpg",
