@@ -22,6 +22,15 @@ export const metadata: Metadata = {
   description: "Desarrollador web frontend con experiencia en HTML, CSS, Javascript, Typesript, frameworks como React, Next JS, Tailwind, y otras tecnologías como NodeJS, SQL, Git, Strapi, Zustand e integracion y uso de la inteligencia atificial en el desarrollo web",
   twitter: {
     card: "summary_large_image"
+  },
+  // ESTO ES LO IMPORTANTE PARA EL NOMBRE DEL SITIO EN GOOGLE:
+  applicationName: 'Joel Angel Dev',
+  openGraph: {
+    siteName: 'Joel Angel Dev',
+    title: 'Joel Angel Dev - Desarrollador Web',
+    description: 'Desarrollador web frontend con experiencia en HTML, CSS y Javascript.',
+    type: 'website',
+    url: 'https://joelangeldev.site',
   }
 };
 

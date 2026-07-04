@@ -2,7 +2,6 @@ import CircleImage from "@/components/circle-image"
 import TransitionPage from "@/components/transition-page"
 import ContactForm from "@/components/contact-form"
 import type { Metadata } from "next"
-import GoogleCaptchaWrapper from "@/app/GoogleCaptchaWrapper"
 import WhatsAppButton from "@/components/whatsApp-button"
 
 export const metadata: Metadata = {
@@ -12,7 +11,7 @@ export const metadata: Metadata = {
 const Contact = () => {
 
   return (
-      <GoogleCaptchaWrapper>    
+      <>    
         <TransitionPage />
         <div className="w-full max-w-6xl px-4 mx-auto mt-36 md:pb-0 md:px-6">
           <CircleImage />
@@ -23,7 +22,7 @@ const Contact = () => {
           <ContactForm />
           <WhatsAppButton />
         </div>
-      </GoogleCaptchaWrapper>
+      </>
     )
   }
   

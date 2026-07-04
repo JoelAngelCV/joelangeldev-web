@@ -234,28 +234,31 @@ export const serviceData = [
 
 export const dataPortfolio = [
     {
+        title: "Chilca Ovni Festival",
+        description: "Aplicación web full stack con sistema de venta de entradas, gestión de usuarios y panel de administración.",
+        image: "/ovnisc.jpg",
+        tags: ["Next.js", "Tailwind", "Typescript", "PayPal", "Framer Motion", "Payload CMS"],
+        githubUrl: "https://github.com/JoelAngelCV/chilcaovni.git",
+        demoUrl: "https://chilcaovnifestival.com/",
+        onProduction: true
+    },
+    {
         title: "Itek Perú",
         description: "Página web para una empresa que brinda servicios de climatización y venta de equipos.",
         image: "/itekperru.jpg",
         tags: ["Next.js", "Tailwind", "Typescript", "Framer Motion"],
         githubUrl: "https://github.com/JoelAngelCV/itekperu",
-        demoUrl: "https://itekperu.vercel.app/"
-    },
-    {
-        title: "Chilca Ovni Festival",
-        description: "Página web de un evento musical con información general, galería de imágenes y venta de entradas.",
-        image: "/ovnisc.jpg",
-        tags: ["Next.js", "Tailwind", "Typescript", "PayPal"],
-        githubUrl: "https://github.com/JoelAngelCV/chilcaovni.git",
-        demoUrl: "https://chilcaovni.vercel.app/"
-    },
+        demoUrl: "https://itekperu.vercel.app/",
+        onProduction: false
+    },    
     {
         title: "Encuestas Presidenciales",
         description: "Aplicación Full Stack donde un usuario puede registrarse e iniciar sesión, votar por su candidato y ver resultados.",
         image: "/eleccionsc.jpeg",
         tags: ["Next.js", "Typescript", "Supabase"],
         githubUrl: "https://github.com/JoelAngelCV/eleccionesperu.git",
-        demoUrl: "https://eleccionesperu.vercel.app/"
+        demoUrl: "https://eleccionesperu.vercel.app/",
+        onProduction: false
     },
     {
         title: "Good Coffee",
@@ -263,7 +266,8 @@ export const dataPortfolio = [
         image: "/screen-goodcoff.jpg",
         tags: ["Next.js", "Typescript", "Stripe", "Zustand"],
         githubUrl: "https://github.com/JoelAngelCV/good-coffee-front.git",
-        demoUrl: "https://good-coff.vercel.app/"
+        demoUrl: "https://good-coff.vercel.app/",
+        onProduction: false
     },
     {
         title: "Modass For Men",
@@ -271,14 +275,7 @@ export const dataPortfolio = [
         image: "/modassweb.jpg",
         tags: ["HTML", "CSS", "Bootstrap", "Javascript"],
         githubUrl: "https://github.com/JoelAngelCV/modass.git",
-        demoUrl: "https://modass.onrender.com"
-    },
-    {
-        title: "Portafolio",
-        description: "Portafolio web conectado a bases de datos MySQL. También con optimización de rendimiento y técnicas de SEO.",
-        image: "/joeldev1.jpg",
-        tags: ["HTML", "CSS", "PHP", "JAVASCRIPT"],
-        githubUrl: "https://github.com/JoelAngelCV/joeldev.git",
-        demoUrl: "https://joeldev.onrender.com/"
+        demoUrl: "https://modass.onrender.com",
+        onProduction: false
     },
 ];

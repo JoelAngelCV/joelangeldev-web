@@ -11,7 +11,7 @@ const Presentation = () => {
         Javascript, React, NextJS entre otras, actualmente desarrollo aplicaciones web de forma independiente.
       </p>
       <Link
-        href="/jadevcv26.pdf"
+        href="/curriculumjacv.pdf"
         target="_blank"
         className='flex mx-auto px-3 py-2 mt-5 md:mt-0 border-2 transition-all cursor-pointer 
         text-gray-300 text-lg w-fit rounded-xl hover:shadow-md hover:shadow-green-500 

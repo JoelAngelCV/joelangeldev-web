@@ -7,9 +7,10 @@ interface ProjectProps {
   tags: string[];
   githubUrl: string;
   demoUrl: string;
+  onProduction?: boolean; // Nueva propiedad opcional para indicar si el proyecto está en producción
 }
 
-export default function ProjectCard({ title, description, image, tags, githubUrl, demoUrl }: ProjectProps) {
+export default function ProjectCard({ title, description, image, tags, githubUrl, demoUrl, onProduction }: ProjectProps) {
   return (
     <div className="group relative overflow-hidden rounded-xl bg-slate-900/50 border border-slate-800 hover:border-x-orange-700 transition-all duration-300 shadow-xl">
       {/* Contenedor de Imagen */}
@@ -39,13 +40,24 @@ export default function ProjectCard({ title, description, image, tags, githubUrl
 
         {/* Botones */}
         <div className="flex items-center gap-4">
+          {onProduction && (
           <a
+            href={demoUrl}
+            target="_blank"
+            className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold rounded-lg transition-colors"
+          >
+            <ExternalLink size={16} />Producción
+          </a>)}
+          {!onProduction &&(<a
             href={demoUrl}
             target="_blank"
             className="flex items-center gap-2 px-4 py-2 bg-secondary/90 hover:bg-secondary/80 text-white text-sm font-semibold rounded-lg transition-colors"
           >
-            <ExternalLink size={16} /> Demo
-          </a>
+            <ExternalLink size={16} />Demo
+          </a>)}
+          
+          
+
           <a
             href={githubUrl}
             target="_blank"
